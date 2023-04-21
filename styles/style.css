@@ -1,0 +1,576 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Outfit', sans-serif;
+    font-style: normal;
+}
+
+body {
+    width: 1280px;
+    padding-top: 68px;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #2A5B45;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: white;
+}
+
+a {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: white;
+}
+
+p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #111827;
+}
+
+.flex {
+    display: flex;
+}
+
+/* -------------------aquí empieza el header (bar nav)------------------------- */
+header {
+    width: 1280px;
+    background-color: rgb(43, 42, 43);
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 40px;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+
+.logo {
+    gap: 7.33px;
+    align-items: center;
+}
+
+.logo>p {
+    color: white;
+    font-size: 23.46px;
+    font-weight: 400;
+}
+
+.iconlogo {
+    width: 20.2px;
+    height: 24.95px;
+    background-image: url("../assets/cup.png");
+}
+
+ul {
+    gap: 16px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+li {
+    list-style: none;
+}
+
+li>a {
+    padding: 8px;
+}
+
+li>a:hover {
+    background-color: rgba(247, 245, 243, 0.102);
+    border-radius: 8px;
+}
+
+.telfyboton {
+    gap: 24px;
+}
+
+.phonenumber {
+    align-items: center;
+    gap: 8px;
+}
+
+.iconphone {
+    width: 24px;
+    height: 24px;
+    background-image: url("../assets/Icon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.telfyboton>a {
+    /*boton iniciar sesion*/
+    padding: 12px 24px 12px 24px;
+    border-radius: 4px;
+    background-color: #515051;
+}
+
+.icontienda {
+    width: 24px;
+    height: 24px;
+    background-image: url("../assets/Carr.png");
+}
+
+
+/* -------------------------------aquí empieza la hoja 1------------------------------------ */
+.section1 {
+    align-items: center;
+    padding: 48px 40px;
+    gap: 24px;
+    background: rgba(227, 222, 215, 0.3);
+}
+
+.article1 {
+    flex-direction: column;
+    gap: 16px;
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 44px;
+}
+
+.buttons {
+    justify-content: flex-start;
+    gap: 16px;
+}
+
+.buttons>a:first-child, .buttons>a:last-child {
+    background: #1F1815;
+    border-radius: 4px;
+    padding: 12px 24px;
+}
+
+.buttons>a:last-child {
+    background: #2A5B45;
+}
+
+
+/* ------------aquí empieza la hoja 2 ( 3 card con café de fondo)------------------------------------ */
+.section2 {
+    padding: 48px 142px;
+    flex-direction: column;
+    text-align: center;
+    gap: 24px;
+    background-image: url("../assets/fondo2.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.cards {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.card {
+    width: 316px;
+    height: 232px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    gap: 16px;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.card>h3 {
+    color: #2B2A2B;
+}
+
+.logocard1, .logocard2, .logocard3 {
+    width: 64px;
+    height: 64px;
+    background-image: url("../assets/icon1-card1.png");
+}
+
+.logocard2 {
+    background-image: url("../assets/icon2-card2.png");
+}
+
+.logocard3 {
+    background-image: url("../assets/icon3-card3.png");
+}
+
+
+/* -------aquí empieza la hoja 3 (card 4 bolsas de café)------------------------------------------------ */
+.section3 {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 40px;
+}
+
+.section3>h2 {
+    color: #2A5B45;
+}
+
+.cards2 {
+    gap: 24px;
+}
+
+.imgn {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding: 24px;
+    border-radius: 8px;
+    border: 1px solid #E3DED7;
+}
+
+.bag1, .bag2, .bag3, .bag4 {
+    width: 219.39px;
+    height: 219.39px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bag1 {
+    background-image: url("../assets/Coffee\ bag.png");
+}
+
+.bag2 {
+    background-image: url("../assets/Coffee\ bag2.png");
+}
+
+.bag3 {
+    background-image: url("../assets/Coffee\ bag3.png");
+}
+
+.bag4 {
+    background-image: url("../assets/Coffee\ bag4.png");
+}
+
+.cards2 div:last-child:hover {
+    background-color: #E3DED7;
+}
+
+.cards2 div:last-child:hover>a {
+    background: #2A5B45;
+}
+
+.price {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+}
+
+.price a, p {
+    color: black;
+}
+
+.imgn>a {
+    padding: 8px;
+    background: rgba(42, 91, 69, 0.7);
+    border-radius: 4px;
+}
+
+.link {
+    align-items: center;
+    gap: 19px;
+}
+
+.link>a {
+    color: black;
+    text-decoration: underline;
+}
+
+.arrow {
+    width: 24px;
+    height: 24px;
+    background-image: url("../assets/Arrow\ narrow\ right\ \(1\).png");
+}
+
+/* -----------------------aquí empieza la hoja 4 (preguntas FAQ)----------------------------------------- */
+.section4 {
+    flex-direction: column;
+    align-items: center;
+    padding: 48px 0px;
+    background-color: #2A5B45;
+    gap: 24px;
+}
+
+.faq {
+    flex-direction: column;
+    gap: 16px;
+}
+
+.question {
+    width: 668px;
+    flex-direction: column;
+    background-color: white;
+    gap: 16px;
+    padding: 24px;
+    border-radius: 10px;
+}
+
+.titleicon {
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid #E3DED7;
+    padding-bottom: 16px;
+}
+
+.question:nth-of-type(3)>.titleicon {
+    border: none;
+    padding-bottom: 0px;
+}
+
+.chevron {
+    width: 20px;
+    height: 20px;
+    background-image: url("../assets/Chevron\ up.png");
+}
+
+.titleicon>h3 {
+    color: #2B2A2B;
+}
+
+.question>p {
+    font-size: 12px;
+    color: #2B2A2B;
+}
+
+.link2 {
+    align-items: center;
+    gap: 19px;
+}
+
+.link2>a {
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+}
+
+.link2>.arrow {
+    background-image: url("../assets/Arrow\ narrow\ right\ white.png");
+}
+
+/* ---------------------------aquí empieza la hoja 5 (coffebar)--------------------------------------------------- */
+section:nth-of-type(5)>.article1>h2 {
+    color: #2A5B45;
+}
+
+section:nth-of-type(5) {
+    justify-content: space-between;
+    gap: 0px;
+}
+section:nth-of-type(5)>.article1{
+    width: 457px ;
+}
+
+section:nth-of-type(5) a {
+    padding: 4px 0px;
+}
+
+/* ----------------aquí empieza la hoja 6 (formulario)-------------------- */
+.split {
+    flex-direction: row;
+    background-color: rgba(165, 42, 42, 0.541);
+    padding: 0 40px;
+    gap: 24px;
+    background-color: #E3DED7;
+}
+
+.split p, .split a {
+    color: #6B7280;
+}
+
+.direction>p:last-child>a {
+    text-decoration: underline;
+}
+
+.contac {
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+}
+
+.titulo {
+    flex-direction: column;
+    gap: 16px;
+}
+
+.titulo>h3 {
+    color: #111827;
+}
+
+.direction {
+    flex-direction: column;
+    gap: 24px;
+}
+
+.details {
+    flex-direction: column;
+    gap: 12px;
+
+}
+
+.cellphone, .email {
+    align-items: center;
+    gap: 12px;
+}
+
+
+.formulario {
+    background-color: white;
+    flex-direction: column;
+    justify-content: center;
+    padding: 32px 51px 32px 67px;
+}
+
+.general {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.nombre {
+    flex-direction: column;
+    gap: 4px;
+}
+
+.coment {
+    flex-direction: column;
+}
+
+input {
+    width: 470px;
+    border-radius: 6px;
+    border: 1px solid #D1D5DB;
+    padding: 9px 13px;
+}
+
+input:hover, textarea:hover {
+    border: 1px solid #9B9EA3;
+}
+
+input:focus, textarea:focus {
+    outline: 2px solid #3F8F6B;
+}
+
+.selectnumber {
+    width: 470px;
+}
+
+.selectnumber input {
+    border-radius: 6px;
+    padding: 9px 13px 9px 66px;
+    background-color: transparent;
+}
+
+.selectnumber select {
+    height: 36.4px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    position: absolute;
+    padding: 0px 5px 0px 13px;
+    z-index: 1;
+}
+
+textarea {
+    width: 470px;
+    height: 122px;
+    border-radius: 6px;
+    padding: 13px 0px 0px 17px;
+    border: 1px solid #D1D5DB;
+}
+
+.check {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.check input {
+    width: 16px;
+    height: 20px;
+    border: none;
+    outline: none;
+}
+
+button {
+    padding: 12px 24px;
+    border-radius: 4px;
+    background-color: #2A5B45;
+    border: none;
+    color: white;
+}
+
+/* ----------------aquí empieza la hoja 6 (footer)-------------------- */
+
+footer{
+    flex-direction: column;
+    justify-content: center;
+
+}
+footer h3{
+    color: white;
+}
+
+.footerwrapper {
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    background: #1F1815;
+    padding: 28.61px 184.67px 37.63px 40px ;
+}
+
+.links{
+    flex-direction: row;
+    align-items: center;
+    gap: 150px;
+}
+
+.contacwrapper{
+    flex-direction: column;
+    gap: 16px;
+}
+.contacwrapper .telfyboton .phonenumber {
+    background-color: #515051;
+    padding: 12px 24px;
+    border-radius: 4px;
+}
+
+.menuwrapper>ul {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.contacwrapper .telfyboton:last-child .iconphone {
+    background-image: url("../assets/Mail-white.png");
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 0.93fr 1.07fr;
+}
+.linkfooter {
+    gap: 128px;
+
+}
+
+.copyright{
+    background-color: #2B2A2B;
+    color: white;
+    padding: 12px 0px;
+    text-align: center;
+}

@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Outfit', sans-serif;
+    font-style: normal;
+}
+.flex {
+    display: flex;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 44px;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: var(--white);
+}
+h3 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--darkgrey);
+}
+
+a {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--white);
+}
+
+p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--bluedark)
+}
+
+:root{
+    --grey: #515051;
+    --darkgrey: #2B2A2B;
+    --black: #1F1815;
+    --taupe: #E3DED7;
+    --green: #2A5B45;
+    --white: #ffffff;
+    --bluedark: #111827;
+}
+
+
+
+/**no borrar mono codeando**/
+.coming{
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--grey);
+}
+span{
+    font-size: 90px;
+    
+}
+.codeando{
+    margin-bottom: 10px;
+}
+/**no borrar mono codeando**/

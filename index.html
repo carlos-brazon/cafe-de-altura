@@ -9,32 +9,33 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;800&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Café de Altura</title>
 </head>
 
 <body>
     <header class="flex">
-        <div class="logo flex">
+        <a href="./index.html"><div class="logo flex">
             <p>cafedealtura.com</p>
             <div class="iconlogo"></div>
         </div>
+        </a>
         <nav>
             <ul class="flex">
-                <li><a href="">Tienda</a></li>
-                <li><a href="">Suscripción</a></li>
-                <li><a href="">Para empresas</a></li>
-                <li><a href="">Sobre nosotros</a></li>
-                <li><a href="">Contacto</a></li>
+                <li><a href="./pages/store.html">Tienda</a></li>
+                <li><a href="./pages/suscription.html">Suscripción</a></li>
+                <li><a href="./pages/empresas.html">Para empresas</a></li>
+                <li><a href="./pages/about.html">Sobre nosotros</a></li>
+                <li><a href="./pages/contact.html">Contacto</a></li>
             </ul>
         </nav>
         <div class="telfyboton flex">
-            <div class="phonenumber flex">
+            <a href=""><div class="phonenumber flex">
                 <div class="iconphone"></div>
-                <a href="">+34 919 49 05 18</a>
-            </div>
+                <p>+34 919 49 05 18</p>
+            </div></a>
             <a href="">Iniciar sesión</a>
         </div>
-        <div class="icontienda"></div>
+        <a href="./pages/basket.html"><div class="icontienda"></div></a>
     </header>
 
     <main>
@@ -48,8 +49,8 @@
                     puedas viajar desde la comodidad de tu hogar.
                 </p>
                 <div class="buttons flex">
-                    <a href="">Descubrir orígenes</a>
-                    <a href=""> Comprar café</a>
+                    <a href="./pages/basket.html">Descubrir orígenes</a>
+                    <a href="./pages/store.html"> Comprar café</a>
                 </div>
             </article>
             <img src="./assets/Heroimage.png " alt="aquí va una imagen de un arbol de cafe">
@@ -119,10 +120,11 @@
                 </div>
             </article>
 
-            <div class="link flex">
-                <a href="">Ver todos</a>
+            <a href="./pages/store.html"><div class="link flex">
+                <p>Ver todos</p>
                 <div class="arrow"></div>
-            </div>
+            </div></a>
+            
         </section>
 <!-- ----------------aquí empieza la hoja 4 (preguntas FAQ)--------------------------         -->
         <section class="section4 flex">
@@ -157,10 +159,10 @@
                 </div>
             </article>
 
-            <div class="link2 flex">
-                <a href="">Resolvemos tus dudas</a>
+            <a href=""><div class="link2 flex">
+                <p>Resolvemos tus dudas</p>
                 <div class="arrow"></div>
-            </div>
+            </div></a>
         </section>
 <!-- -----------------------aquí empieza la hoja 5 (coffebar)--------------------------------------------------- -->
         <section class="section1 flex">
@@ -169,10 +171,12 @@
                 <p>Visita nuestra cafetería en el centro de la ciudad para probar los granos de café antes de hacer tu
                     pedido y llévate un descuento
                 </p>
-                <div class="link flex">
-                    <a href="">Como llegar</a>
+                <a href="https://www.google.com/maps/place/Gamma+Tech+School/@40.4373922,-3.6776844,17z/data=!3m1!4b1!4m6!3m5!1s0xd4229deaf9deea1:0xed04d2cdcbd84b03!8m2!3d40.4373922!4d-3.6754957!16s%2Fg%2F11t18d_y50?hl=en" target="_blank">
+                    <div class="link flex">
+                    <p>Como llegar</p>
                     <div class="arrow"></div>
                 </div>
+            </a>
             </article>
             <img src="./assets/coffebar.png" alt="aquí va la imagen de un bar">
         </section>
@@ -194,20 +198,20 @@
                     <div class="details flex">
                         <div class="cellphone flex">
                             <img src="./assets/Phone.contac.png" width="24px" height="24px" alt="aquí va un icono de un telefóno">
-                            <a href="">+1 (555) 123-4567</a>
+                            <p>+1 (555) 123-4567</p>
                         </div>
 
                         <div class="email flex">
                             <img src="./assets/Mail.png" width="24px" height="24px" alt="aquí va la imagen de un mail">
-                            <a href="">Carlosbrazon@gammtchschool.com</a>
+                            <p>support@example.com</p>
                         </div>
                     </div>
-                    <p>¿Buscas un trabajo? <a href="">Ver nuestras ofertas.</a></p>
+                    <p>¿Buscas un trabajo? <a href=""> Ver nuestras ofertas.</a></p>
                 </div>
             </div>
 
             <div class="formulario flex">
-                <form action="#" class="formnu">
+                <form action="#">
                     <div class="general flex">
                         <div class="nombre flex">
                             <label for="name" class="flex">Nombre completo</label>
@@ -224,8 +228,8 @@
                             <label for="mobile" class="flex">Teléfono</label>
                             <div class="selectnumber flex">
                                 <select id="country-code">
-                                    <option value="SP">SP</option>
                                     <option value="US">US</option>
+                                    <option value="SP">SP</option>
                                 </select>
                                 <input type="tel" id="mobile" name="mobile" placeholder="+1 (555) 987-6543">
                             </div>
@@ -244,7 +248,7 @@
                                         condiciones</a></p>
                             </label>
                         </div>
-                        <button type="submit">Enviar</button>
+                        <input type="submit" value="Enviar">
                     </div>
                 </form>
             </div>
@@ -254,10 +258,11 @@
     <footer class="flex">
         <div class="footerwrapper flex">
 
-            <div class="logo flex">
+            <a href=""><div class="logo flex">
                 <p>cafedealtura.com</p>
                 <div class="iconlogo"></div>
             </div>
+            </a>
 
             <div class="links grid">
                 <div class="contacwrapper flex">
@@ -279,11 +284,11 @@
                 <div class="linkfooter flex">
                     <div class="menuwrapper flex">
                         <ul class="flex">
-                            <li><a href="">Tienda</a></li>
-                            <li><a href="">Suscripción</a></li>
-                            <li><a href="">Para empresas</a></li>
-                            <li><a href="">Sobre nosotros</a></li>
-                            <li><a href="">Contacto</a></li>
+                            <li><a href="./pages/store.html">Tienda</a></li>
+                            <li><a href="./pages/suscription.html">Suscripción</a></li>
+                            <li><a href="./pages/empresas.html">Para empresas</a></li>
+                            <li><a href="./pages/about.html">Sobre nosotros</a></li>
+                            <li><a href="./pages/contact.html">Contacto</a></li>
                         </ul>
                     </div>
                     <div class="menuwrapper flex">

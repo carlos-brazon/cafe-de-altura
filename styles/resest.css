@@ -43,27 +43,46 @@ p {
     color: var(--bluedark)
 }
 
+span{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+
+}
+
 :root{
+    --blackOriginal: #000000;
     --grey: #515051;
     --darkgrey: #2B2A2B;
     --black: #1F1815;
+    --blackTransparent: #F7F5F31A;
     --taupe: #E3DED7;
     --green: #2A5B45;
+    --green70:#2A5B45B2;
+    --greentransparen: #2A5B451A;
     --white: #ffffff;
+    --whiteOff: #F7F5F3;
     --bluedark: #111827;
 }
+
+.hidden {
+    display: none;
+}
+
 
 
 
 /**no borrar mono codeando**/
 .coming{
+    /* height: 500px; */
     flex-direction: column;
     align-items: center;
     background-color: var(--grey);
 }
-span{
-    font-size: 90px;
-    
+.coming>span{
+    font-size: 90px; 
+    font-weight: 600;   
+    line-height: 150px;
 }
 .codeando{
     margin-bottom: 10px;

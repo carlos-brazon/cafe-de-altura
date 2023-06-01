@@ -14,10 +14,11 @@
 
 <body>
     <header class="flex">
-        <a href="../index.html"><div class="logo flex">
-            <p>cafedealtura.com</p>
-            <div class="iconlogo"></div>
-        </div>
+        <a href="../index.html">
+            <div class="logo flex">
+                <p>cafedealtura.com</p>
+                <div class="iconlogo"></div>
+            </div>
         </a>
         <nav>
             <ul class="flex">
@@ -35,21 +36,105 @@
             </div>
             <a href="">Iniciar sesión</a>
         </div>
-        <a href="./basket.html"><div class="icontienda"></div></a>
+        <div class="counter-float flex">
+            <a href="./basket.html" class="flex">
+                <div class="icontienda"></div>
+            </a>
+            <p class="flex">10</p>
+        </div>
     </header>
+    <section class="basket-inicial flex">
 
-  <div class="coming flex">
-      <span> Website Coming Soon</span>
-      <span>Keep calm</span>
-      <img class="codeando" src="../assets/mono.webp" alt="" style="border-radius: 5px">
+        <h2>Cesta (<span>2</span>)</h2>
+        <div class="basket-body flex">
+            <div class="basket-product-table flex">
+                <h3>Productos</h3>
+                <div class="coffebag flex" style="background-image: url();">
+                <!-- AQUI SE CREAN LAS NUEVAS BAGS DE CAFE -->
+            </div>
+                <h3>Seleccionar envío</h3>
+                <div class="basket-shipping flex">
+                    <div class="shipping-input flex">
+                        <input type="radio" class="custom-radio" id="enviogratis" name="gratis" value="Envío 5-7 días">
+                        <div class="details">
+                            <label for="enviogratis">Envío 5-7 días</label>
+                            <p>Opción estándar sin seguimiento</p>
+                        </div>
+                    </div>
+                    <h3>GRATIS</h3>
+                </div>
 
-  </div>
-<!-- ---------------aquí empieza la hoja 6 (footer)------------- -->
+                <div class="basket-divider"></div>
+
+                <div class="basket-shipping flex">
+                    <div class="shipping-input flex">
+                        <input type="radio" class="custom-radio" id="enviourgente" name="gratis"
+                            value="Envío urgente 24h ">
+                        <div class="details">
+                            <label for="enviourgente">Envío urgente 24h</label>
+                            <p>Recibe tu pedido en las siguientes 24h (Para pedidos realizados antes de las 13:00).</p>
+                        </div>
+                    </div>
+                    <h3>9,00 €</h3>
+                </div>
+
+
+
+            </div>
+            <div class="basket-total flex">
+                <div class="details-total flex">
+                    <h3>Total del carrito</h3>
+                    <div class="basket-divider"></div>
+                    <div class="subtotal flex">
+                        <p>SUBTOTAL</p>
+                        <span>18,00 €</span>
+                    </div>
+                    <div class="subtotal flex">
+                        <p>ENVÍO</p>
+                        <span>GRATIS</span>
+                    </div>
+                    <div class="basket-divider"></div>
+                    <div class="subtotal flex">
+                        <p>TOTAL</p>
+                        <div class="total flex">
+                            <span>GRATIS</span>
+                            <p>Incluye 3,78€ de IVA</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="buttons flex">
+                    <a href="./pages/basket.html">Ir a checkout</a>
+                    <a href="./pages/store.html"> Seguir comprando</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+    <div class="coming flex">
+        <span> Website Coming Soon</span>
+        <span>Keep calm</span>
+        <img class="codeando" src="../assets/mono.webp" alt="" style="border-radius: 5px">
+
+    </div>
+
+
+
+
+
+
+    <!-- ---------------aquí empieza la hoja 6 (footer)------------- -->
     <footer class="flex">
         <div class="copyright">
-           <a href=""> Todos los derechos reservados - Café de Altura SL - 2022</a>
+            <a href=""> Todos los derechos reservados - Café de Altura SL - 2022</a>
         </div>
     </footer>
+    <script src="../js/basket.js"></script>
 </body>
 
 </html>

@@ -30,8 +30,6 @@
 const buttons = document.querySelectorAll(".imgn button:last-child");
 console.log(JSON.parse(localStorage.getItem("data")) == null);
 
-
-
 buttons.forEach((e, i) => {
     e.addEventListener('click', event => {
         event.preventDefault();

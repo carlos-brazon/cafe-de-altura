@@ -14,7 +14,7 @@ const h3envio= document.querySelectorAll('.basket-shipping')
 envio[0].addEventListener('click', (event) =>{
     console.log(event);
     if (event) {
-        divenvio.innerHTML
+        divenvio=divenvio.innerHTML
     }
 })
 envio[1].addEventListener('click', (event) =>{

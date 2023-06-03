@@ -28,7 +28,9 @@
 // });
 
 const buttons = document.querySelectorAll(".imgn button:last-child");
-console.log(JSON.parse(localStorage.getItem("data")) == null);
+const counterHeader = document.querySelector('.counter-float>a>p');
+
+counterHeader.innerHTML = JSON.parse(localStorage.getItem("data")).length;
 
 buttons.forEach((e, i) => {
     e.addEventListener('click', event => {
@@ -38,7 +40,7 @@ buttons.forEach((e, i) => {
         let precio = document.querySelectorAll(".imgn")[i].children[1].children[1].innerHTML;
         let urlinicial = getComputedStyle(document.querySelectorAll(".imgn")[i].children[0]).getPropertyValue('background-image');
         let url = urlinicial.slice(5, urlinicial.length - 2);
-
+        
         const repeated = data.find(bag => bag.pais === pais);
         if (repeated) {
             repeated.quantity += 1;
@@ -52,6 +54,7 @@ buttons.forEach((e, i) => {
             }
             data.push(bagdata);
             localStorage.setItem("data", JSON.stringify(data));
+            counterHeader.innerHTML = data.length;
         };
     });
 });

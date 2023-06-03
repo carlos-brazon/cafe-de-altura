@@ -86,11 +86,10 @@ nav li>a:hover {
     background-image: url("../assets/Carr.png");
 }
 
-
-.counter-float{
+.counter-float>a{
     gap: 8px;
 }
-.counter-float>p{
+.counter-float>a>p{
     background-color: var(--blackTransparent);
     align-items: center;
     justify-content: center;
@@ -613,6 +612,7 @@ footer h3 {
 }
 
 .basket-body{
+    /* width: 1200px; */
     gap: 24px;
 }
 
@@ -623,6 +623,7 @@ footer h3 {
     /* border: 2px solid gold; */
 }
 .coffebag{
+    min-height: 179px;
     flex-direction: column;
     gap: 24px;
 }
@@ -680,14 +681,15 @@ footer h3 {
     align-items: center;
     justify-content: space-between;
     gap: 16px;
+    width: 800px;
 }
-.basket-shipping>input{ 
+.basket-shipping>input{
     width: 16px;
     height: 16px;
 }
 .shipping-input{
     gap: 16px;
-    
+
 }
 
 .basket-total {

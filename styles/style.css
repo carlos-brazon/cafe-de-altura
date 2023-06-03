@@ -182,7 +182,7 @@ nav li>a:hover {
 
 /* -------aquí empieza la hoja 3 (card 4 bolsas de café)------------------------------------------------ */
 .section3 {
-    gap: 40px;
+    gap: 24px;
     padding: 40px;
 }
 
@@ -202,7 +202,9 @@ nav li>a:hover {
 }
 
 .cards2 {
-    gap: 24px;
+    flex-direction: row;
+    gap: 32px;
+    justify-content: space-between;
 }
 
 .imgn {
@@ -574,10 +576,7 @@ footer h3 {
 
 
 /*************************************************STORE**************************/
-.section3-store {
-    padding-bottom: 0px;
-    gap: 24px;
-}
+
 .bag5 {
     background-image: url("../assets/Coffee\ bag5.png");
 }
@@ -690,8 +689,6 @@ footer h3 {
     gap: 16px;
     
 }
-
-
 
 .basket-total {
     flex-direction: column;

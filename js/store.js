@@ -26,11 +26,12 @@
 //                     `;
 //                     card2.append(div)
 // });
-
-const buttons = document.querySelectorAll(".imgn button:last-child");
+const data=JSON.parse(localStorage.getItem("data")) || [];
 const counterHeader = document.querySelector('.counter-float>a>p');
-
-counterHeader.innerHTML = JSON.parse(localStorage.getItem("data")).length;
+const buttons = document.querySelectorAll(".imgn button:last-child");
+if (data==null || []) {
+    counterHeader.innerHTML = data.length;
+}
 
 buttons.forEach((e, i) => {
     e.addEventListener('click', event => {

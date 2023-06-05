@@ -42,12 +42,16 @@ p {
     line-height: 16px;
     color: var(--bluedark)
 }
+.p-small {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+}
 
 span{
     font-weight: 600;
     font-size: 14px;
     line-height: 16px;
-
 }
 
 :root{

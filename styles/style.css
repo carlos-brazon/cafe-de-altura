@@ -91,13 +91,12 @@ nav li>a:hover {
 }
 .counter-float>a>p{
     background-color: var(--blackTransparent);
+    color: var(--white);
     align-items: center;
     justify-content: center;
     border-radius:50px;
     width: 24px;
     height: 24px;
-    color: var(--white);
-    font-size: 12px;
 }
 
 /* -------------------------------aquí empieza la hoja 1------------------------------------ */
@@ -689,7 +688,6 @@ footer h3 {
 }
 .shipping-input{
     gap: 16px;
-
 }
 
 .basket-total {
@@ -708,10 +706,18 @@ footer h3 {
 .subtotal{
     justify-content: space-between;
 }
+.subtotal:last-child> p {
+    font-weight: 600;
+}
 .total{
     flex-direction: column;
     align-items: flex-end;
-    gap: 8px    ;
+    gap: 8px;
+}
+
+.total>p>span{
+    font-weight: 400;
+    font-size: 12px;
 }
 .buttons a:first-child{
     background-color: var(--green);
